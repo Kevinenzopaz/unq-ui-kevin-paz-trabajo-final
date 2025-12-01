@@ -1,16 +1,68 @@
-# React + Vite
+# Trabajo Final Integrador - Interfaces de Usuario (UNQ)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una implementacion del juego Preguntados desarrollado en React como parte del Trabajo Final Integrador de la materia Interfaces de Usuario.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descripcion
 
-## React Compiler
+El objetivo de la aplicacion es responder preguntas de trivia seleccionando previamente una dificultad. El juego consume una API externa proporcionada por la catedra para obtener las preguntas y validar las respuestas.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+React (Vite): Libreria principal de UI.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tailwind CSS: Para los estilos y diseño responsive.
+
+Lucide React: Para los iconos de la interfaz.
+
+Canvas Confetti: Efecto visual de celebracion.
+
+Fetch API: Para la comunicacion con el backend.
+
+## Instalacion y Ejecucion
+
+Sigue estos pasos para correr el proyecto en tu entorno local.
+
+Prerrequisitos
+
+Tener instalado Node.js (version 16 o superior).
+Tener instalado Git.
+
+Paso 1: Clonar el repositorio
+
+Abre tu terminal y ejecuta:
+
+git clone [https://github.com/Kevinenzopaz/unq-ui-kevin-paz-trabajo-final.git](https://github.com/Kevinenzopaz/unq-ui-kevin-paz-trabajo-final.git)
+cd unq-ui-kevin-paz-trabajo-final
+
+Paso 2: Instalar dependencias
+
+Instala las librerías necesarias (React, Tailwind, etc.) ejecutando:
+npm install
+
+Nota importante sobre versiones: Este proyecto utiliza especificamente TailwindCSS v3.4.17 para garantizar la compatibilidad con PostCSS. El comando npm install descargara automaticamente esta version correcta definida en el package.json, evitando conflictos conocidos con versiones posteriores (v4.0+).
+
+Paso 3: Ejecutar el proyecto
+
+Levanta el servidor de desarrollo con:
+npm run dev
+
+
+La consola te mostrara una URL (usualmente http://localhost:5173/). Abrela en tu navegador para comenzar a jugar.
+
+## Estructura del Proyecto
+
+El codigo fuente se encuentra en la carpeta /src y esta organizado de la siguiente manera:
+
+/assets: Recursos estaticos (imagenes).
+
+/components: Componentes de React reutilizables (Pantallas del juego).
+
+/services: Logica de conexion con la API externa.
+
+App.jsx: Orquestador principal de la aplicacion.
+
+## Autor
+
+Kevin Paz
+Materia: Interfaces de Usuario - UNQ
